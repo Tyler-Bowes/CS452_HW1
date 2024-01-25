@@ -1,0 +1,38 @@
+
+# Project
+* CS 452
+* HW1
+* 1/18/2024
+* Tyler Bowes
+****************
+ 
+# Overview
+
+This program is a completed implementation of a general-purpose list module.  The
+implemented list is structured as a double-ended double-linked queue. With pointers 
+to arbitrary data objects. With the use of this structure, opporations implemented 
+like put, get, ith, and rem are symmetric. 
+
+# Included Files
+
+
+
+# Testing/Test Suit
+
+Tests were created in main.c and go though functions of both head and tail. 
+The tests go though an empty list, 1 element, 2 elements, and 3 elements.
+with each testing different sequences of using the functions. as an example 
+removing an element in a 3 element list (by using get and/or rem) then using 
+get to show head/tail elements are being updated when needed.
+
+EX.
+list = "Head", "Hello", "Tail" (call get tail)
+-> "Head", "Hello" ( check that calling get tail removes "Hello")
+(if it is tests passing + 1)
+
+# Compiling 
+
+To compile and run the program go inside the 'exec' folder and run "make"
+in the commandline.  Once compiled, run the deq file.
+
+Other Notes.  I changed the "GNUmakefile" to name to just "makefile".
